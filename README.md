@@ -20,7 +20,7 @@ Today, we're putting four legendary contenders to the test. And by the end, we'l
 
 ## Contender 1: The Gaussian Integral
 
-$$\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}$$
+$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 
 **Beauty Score: Symmetry**
 
@@ -30,19 +30,19 @@ But there's a problem: there is no elementary antiderivative for $e^{-x^2}$. So 
 
 The solution is one of the most beautiful tricks in calculus. Instead of solving the integral directly, we square it:
 
-$$I = \int_{-\infty}^{\infty} e^{-x^2} \, dx$$
+$$I = \int_{-\infty}^{\infty} e^{-x^2} dx$$
 
 Then:
 
-$$I^2 = \left(\int_{-\infty}^{\infty} e^{-x^2} \, dx\right) \left(\int_{-\infty}^{\infty} e^{-y^2} \, dy\right)$$
+$$I^2 = \left(\int_{-\infty}^{\infty} e^{-x^2} dx\right) \left(\int_{-\infty}^{\infty} e^{-y^2} dy\right)$$
 
 which transforms the problem into a two-dimensional integral over the entire plane:
 
-$$I^2 = \iint e^{-(x^2+y^2)} \, dx \, dy$$
+$$I^2 = \iint e^{-(x^2+y^2)} dy$$
 
 And now something magical happens. The expression $x^2 + y^2$ invites a switch to polar coordinates ($r, \theta$):
 
-$$I^2 = \int_{0}^{2\pi} d\theta \int_{0}^{\infty} r e^{-r^2} \, dr = 2\pi \int_{0}^{\infty} r e^{-r^2} \, dr$$
+$$I^2 = \int_{0}^{2\pi} d\theta \int_{0}^{\infty} r e^{-r^2} dr = 2\pi \int_{0}^{\infty} r e^{-r^2} dr$$
 
 Let $u = r^2$, and suddenly the whole thing collapses:
 
@@ -52,7 +52,7 @@ A problem that seemed impossible in one dimension becomes almost trivial in two.
 
 ## Contender 2: The Dirichlet Integral
 
-$$\int_{0}^{\infty} \frac{\sin x}{x} \, dx = \frac{\pi}{2}$$
+$$\int_{0}^{\infty} \frac{\sin x}{x} dx = \frac{\pi}{2}$$
 
 **Beauty Score: Ingenuity**
 
@@ -60,11 +60,11 @@ This integral looks innocent, but it is notoriously stubborn. The function $\fra
 
 So instead of attacking the integral directly, we introduce a new parameter. Define:
 
-$$I(t) = \int_{0}^{\infty} e^{-tx} \frac{\sin x}{x} \, dx \quad \text{for } t \ge 0$$
+$$I(t) = \int_{0}^{\infty} e^{-tx} \frac{\sin x}{x} dx \quad \text{for } t \ge 0$$
 
 The exponential factor acts like a mathematical brake, forcing the oscillations to dampen quickly. Now comes the clever part. Differentiate $I(t)$ with respect to $t$:
 
-$$I'(t) = -\int_{0}^{\infty} e^{-tx} \sin x \, dx = -\frac{1}{1+t^2}$$
+$$I'(t) = -\int_{0}^{\infty} e^{-tx} \sin x dx = -\frac{1}{1+t^2}$$
 
 (This step quietly relies on being able to differentiate under the integral sign—swapping the order of a derivative and an integral. It's justified here because the damping factor $e^{-tx}$ keeps everything well-behaved for $t > 0$, but it's worth flagging as the one place in this derivation where a rigorous treatment would pause to check convergence before moving on.)
 
@@ -78,13 +78,13 @@ $$I(t) = \frac{\pi}{2} - \arctan(t)$$
 
 Finally, set $t = 0$ to return to our original problem:
 
-$$\int_{0}^{\infty} \frac{\sin x}{x} \, dx = \frac{\pi}{2} - \arctan(0) = \frac{\pi}{2}$$
+$$\int_{0}^{\infty} \frac{\sin x}{x} = \frac{\pi}{2} - \arctan(0) = \frac{\pi}{2}$$
 
 When the integral refuses to yield to direct calculation, we modify the problem slightly, solve the flexible version, and return home. Sometimes elegance means knowing exactly what question to ask instead.
 
 ## Contender 3: The Fourier Transform
 
-$$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i \xi x} \, dx$$
+$$\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i \xi x} dx$$
 
 **Beauty Score: Power**
 
@@ -98,7 +98,7 @@ It powers telecommunications, audio compression, MRI imaging, and quantum mechan
 
 ## Contender 4: Cauchy's Integral Formula
 
-$$f(z_0) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - z_0} \, dz$$
+$$f(z_0) = \frac{1}{2\pi i} \oint_C \frac{f(z)}{z - z_0} dz$$
 
 **Beauty Score: Depth**
 
@@ -110,7 +110,7 @@ An entirely local quantity is encoded in global boundary information.
 
 And then it gets even more remarkable. Differentiating under the integral sign gives:
 
-$$f^{(n)}(z_0) = \frac{n!}{2\pi i} \oint_C \frac{f(z)}{(z - z_0)^{n+1}} \, dz$$
+$$f^{(n)}(z_0) = \frac{n!}{2\pi i} \oint_C \frac{f(z)}{(z - z_0)^{n+1}} dz$$
 
 The exact same boundary integral doesn't just give you the function's value—it gives you every single derivative. That leads to a defining miracle of complex analysis: if a complex function is differentiable once, it is automatically infinitely differentiable and equal to its Taylor series. All of that is locked inside one contour integral.
 
@@ -133,7 +133,7 @@ There's a nice way to bring this full circle. Remember Euler's identity from the
 
 So if we have to choose a winner...
 
-$$\oint_C \frac{f(z)}{z - z_0} \, dz = 2\pi i \, f(z_0)$$
+$$\oint_C \frac{f(z)}{z - z_0} dz = 2\pi i f(z_0)$$
 
 takes the crown.
 
