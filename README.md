@@ -38,7 +38,7 @@ $$I^2 = \left(\int_{-\infty}^{\infty} e^{-x^2} dx\right) \left(\int_{-\infty}^{\
 
 which transforms the problem into a two-dimensional integral over the entire plane:
 
-$$I^2 = \iint e^{-(x^2+y^2)} dy$$
+$$I^2 = \iint e^{-(x^2+y^2)} dx dy$$
 
 And now something magical happens. The expression $x^2 + y^2$ invites a switch to polar coordinates ($r, \theta$):
 
