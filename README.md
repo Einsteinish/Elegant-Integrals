@@ -1,6 +1,11 @@
 # The Search for the Most Elegant Integral in Mathematics
 
+[Watch the Youtube video here](https://youtu.be/7_G-4JVHM_0)
+
+[![YouTube Video Thumbnail](https://img.youtube.com/vi/7_G-4JVHM_0/0.jpg)](https://www.youtube.com/watch?v=7_G-4JVHM_0) 
 What is the most beautiful integral in mathematics?
+
+---
 
 There may be no official answer.
 
@@ -145,6 +150,8 @@ takes the crown.
 
 > Not because it is the most famous, and not because it has the shortest notation, but because it expresses an astonishing truth with almost no wasted machinery: to know the boundary is to know everything inside.
 
-[Watch the Youtube video here](https://youtu.be/7_G-4JVHM_0)
+---
+
+[Watch the Youtube video here](https://youtu.be/7_G-4JVHM_0)  
 
 [![YouTube Video Thumbnail](https://img.youtube.com/vi/7_G-4JVHM_0/0.jpg)](https://www.youtube.com/watch?v=7_G-4JVHM_0) 
