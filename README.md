@@ -145,4 +145,6 @@ takes the crown.
 
 > Not because it is the most famous, and not because it has the shortest notation, but because it expresses an astonishing truth with almost no wasted machinery: to know the boundary is to know everything inside.
 
+[Watch the Youtube video here](https://youtu.be/C0ApGdoJu1w)
 
+[![YouTube Video Thumbnail](https://img.youtube.com/vi/C0ApGdoJu1w/0.jpg)](https://www.youtube.com/watch?v=C0ApGdoJu1w)
