@@ -3,9 +3,10 @@
 [Watch the Youtube video here](https://youtu.be/7_G-4JVHM_0)
 
 [![YouTube Video Thumbnail](https://img.youtube.com/vi/7_G-4JVHM_0/0.jpg)](https://www.youtube.com/watch?v=7_G-4JVHM_0) 
-What is the most beautiful integral in mathematics?
 
 ---
+
+What is the most beautiful integral in mathematics?
 
 There may be no official answer.
 
